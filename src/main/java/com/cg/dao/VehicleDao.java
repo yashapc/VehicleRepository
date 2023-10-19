@@ -6,7 +6,7 @@ import com.cg.entity.Vehicle;
 
 public interface VehicleDao {
 
-	String addEmployee(Vehicle v);
+	String addVehicle(Vehicle v);
 
 	List<Vehicle> getAllVehicle();
 
