@@ -1,0 +1,6 @@
+com\cg\Application.class
+com\cg\dao\VehicleDao.class
+com\cg\repository\VehicleRepository.class
+com\cg\controller\VehicleController.class
+com\cg\entity\Vehicle.class
+com\cg\service\VehicleService.class
