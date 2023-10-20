@@ -1,5 +1,6 @@
 package com.cg.service;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -15,16 +16,18 @@ public class VehicleService implements VehicleDao {
 	@Autowired
 	VehicleRepository vr;
 
+	List<Vehicle> list = new ArrayList<>();
+
 	public String addVehicle(Vehicle v) {
 
-		vr.save(v);
+		list.add(v);
 
 		return "Vehicle added.....";
 	}
 
 	public List<Vehicle> getAllVehicle() {
 
-		return vr.findAll();
+		return list;
 	}
 
 }
