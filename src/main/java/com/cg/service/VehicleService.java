@@ -7,33 +7,24 @@ import org.springframework.stereotype.Service;
 
 import com.cg.dao.VehicleDao;
 import com.cg.entity.Vehicle;
+import com.cg.repository.VehicleRepository;
 
 @Service
 public class VehicleService implements VehicleDao {
+
 	@Autowired
-	
 	VehicleRepository vr;
 
-//	public String addEmployee(Vehicle vmp) {
-//		vr.save(vmp);
-//		return "Employee added....";
-//	}
-//
-//	public List<Vehicle> getAllEmployee() {
-//		return vr.findAll();
-//
-//	}
-
-	@Override
 	public String addVehicle(Vehicle v) {
-		// TODO Auto-generated method stub
-		return null;
+
+		vr.save(v);
+
+		return "Vehicle added.....";
 	}
 
-	@Override
 	public List<Vehicle> getAllVehicle() {
-		// TODO Auto-generated method stub
-		return null;
+
+		return vr.findAll();
 	}
 
 }
